@@ -78,10 +78,6 @@ you can not set this bit from 1 to 0. But don't worry about if you can boot from
 As talked not all USB Mass Storage Device is supported.
 
 
-## Boot Pi freely
-We can use SD card and USB Mass Storage Device at the same time or not.
-Suppose that both of the two devices have root and boot partition.Just need to know the SD card has a higher priority than the U disk when booting.The boot partition in SD card will be chosen as the real boot patition and the one in USB card will be ignored when both of them is present.
 
-In the last image the root property change to a PARTUUID but it is compatible with the previous methods.That means you can also set it to "root=/dev/sda2".
 
 
