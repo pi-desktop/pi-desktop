@@ -84,21 +84,4 @@ Suppose that both of the two devices have root and boot partition.Just need to k
 
 In the last image the root property change to a PARTUUID but it is compatible with the previous methods.That means you can also set it to "root=/dev/sda2".
 
-Available devices && boot location combinations:
-
-
-|OTP     |SD card              | U card   -     |  /boot/      | /            |
-|--------|---------------------|----------------|--------------|--------------|
-|1020000a|√ root=/dev/mmcblk0p1|×               |/dev/mmcblk0p1|/dev/mmcblk0p2|
-|1020000a|√ root=/dev/mmcblk0p1|√ root not care |/dev/mmcblk0p1|/dev/mmcblk0p2|
-|1020000a|√ root=/dev/sda2     |√ root not care |/dev/mmcblk0p1|/dev/sda2     |
-|3020000a|√ root=/dev/mmcblk0p1|×               |/dev/mmcblk0p1|/dev/mmcblk0p2|
-|3020000a|√ root=/dev/mmcblk0p1|√ root not care |/dev/mmcblk0p1|/dev/mmcblk0p2|
-|3020000a|√ root=/dev/sda2     |√ root not care |/dev/mmcblk0p1|/dev/sda2     |
-|3020000a|×                    |√ root=/dev/sda2|/dev/sda1     |/dev/sda2     |
-
-Note:
-
-'√' means the device is exist,'×' means not exist.
-"root" is the property in cmdline.txt in the corresponding device.
 
