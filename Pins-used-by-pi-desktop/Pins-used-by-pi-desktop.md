@@ -4,7 +4,7 @@
 In order to achieve reliable power control and RTC the following pins on Pi is used by Pi-desktop. Except the two pins of I2C, please do not use the other pins listed in the table,otherwise there may be a problem. And the I2C pin just can be used as I2C but can not be General IO.
 
 
-| GPIO   | Fuction on Pi-desktop | Detials |
+| GPIO   | Function on Pi-desktop | Details |
 |--------|-----------------------|---------|
 | GPIO6  |[Pin2](https://github.com/pi-desktop/safety-power-control/blob/master/safety-power-control.md)| The state of Pi,was read by the MCU |
 | GPIO13 | [Pin1](https://github.com/pi-desktop/safety-power-control/blob/master/safety-power-control.md)| The pulse signal from MCU to Pi|
